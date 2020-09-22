@@ -1,0 +1,242 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
+h2{
+text-align:center;
+font-family: 'Bellota Text';
+margin-bottom: 5%;
+font-weight: bold;
+}
+#mainsponsor{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+#mainsponsor:hover{
+    opacity:0.5;
+}
+body{
+background: rgb(192,244,255);
+background: linear-gradient(90deg, rgba(192,244,255,1) 0%, rgba(255,255,255,1) 51%, rgba(174,241,255,1) 100%);
+background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
+}
+
+.text-box{
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  text-align: center;
+  backface-visibility: hidden;
+}
+
+@keyframes Jump{
+
+  0%{
+   opacity: 0;
+   transform: translateY(-3.75rem) ;
+  }
+
+  60%{
+    transform: translateY(3.75rem);
+  }
+
+  100%{
+    opacity: 1;
+    transform: translate(0);
+  }
+
+}
+#sponsorss{
+  height: 65vh;
+  background-image: linear-gradient(to right bottom,rgba(167 200 202 / 80%),rgba(48,227,202,0.8)), url(https://images.all-free-download.com/images/graphiclarge/abstract_blue_technical_background_311541.jpg);
+  background-size: contain;
+    background-position: center;
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 50% 50vh,0 100%);
+    position: relative;
+}
+
+.sponsorss-heading{
+  font-weight: 400;
+    font-size: 3.75rem;
+    letter-spacing: 2.1875rem;
+    color: #fff;
+    animation: Jump 1.5s linear 0.25s;
+}
+
+.container {
+  position: relative;
+  width: 50%;
+}
+
+.image {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: #008CBA;
+}
+
+.container:hover .overlay {
+  opacity: 0.7;
+}
+
+.text {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.other-sponsors{
+  padding: 20px;
+  display: block;
+  margin:auto;
+  max-width: 100%;
+  max-height: 100%;
+  padding: 2%;
+}
+#sponsor-images{
+  margin: 5% 5% 5% 5%;
+}
+.other-sponsors:hover{
+  opacity: 0.5;
+}
+.hiddendiv{
+  position: relative;
+}
+.hiddentext {
+  display: none;
+}
+.hiddendiv:hover .hiddentext {
+  display:block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  text-align: center;
+  color: white;
+  font-size: 20px;
+}
+
+.carousel .carousel-item {
+    transition-duration: 0.3s;
+}
+
+.carousel-inner img{
+  color:rgba(0,0,0,0.5);
+}
+.carousel-inner > .item > img {
+  width:640px;
+  height:500px;
+}
+
+#myCarousel div img{
+  color:rgba(0,0,0,0.5);
+  margin: auto;
+  width: 70%;
+}
+
+#contact{
+background-image: linear-gradient(to right bottom,rgba(17,153,158,0.8),rgba(48,227,202,0.8)), url(https://previews.123rf.com/images/o0matze0o/o0matze0o1805/o0matze0o180500018/101535114-website-and-internet-contact-us-page-concept-with-hanging-icons-in-front-of-a-silver-background.jpg);
+background-position: right;
+background-size: cover;
+background-repeat: no-repeat;
+text-align: center;
+color: #fff;
+margin-top: 30;
+}
+
+#contact a{
+  text-decoration: none;
+  color: white;
+  font-size: 1.5rem;
+}
+.cta1{
+  display: block;
+  font-family: "Montserrat",sans-serif;
+  font-weight: 900;
+  font-size: 4.2rem;
+  letter-spacing: 0.25rem;
+  padding: 7%;
+  text-align: center;
+}
+
+.cta2{
+  display: block;
+  font-family: "Montserrat",sans-serif;
+  font-weight: 600;
+  font-size: 3.5rem;
+  letter-spacing: .125rem;
+  padding: 2%;
+  text-align: center;
+}
+.cta3{
+  font-size: 1.5rem;
+}
+
+.address{
+  padding: 6%;
+}
+
+#footer{
+text-align: center;
+padding: 4.75rem;
+}
+.icon{
+  color: gray;
+  margin-left: 2.875rem;
+  margin-bottom: 2.5rem;
+}
+
+.pfooter{
+  font-family: "Lato",sans-serif;
+  font-weight: 700;
+  font-size: 1.3rem;
+}
+
+
+
+@media screen and (max-width: 630px)
+{
+  .other-sponsors{
+
+    padding-right: 12%;
+    padding-left: 12%;
+    width: 100%;
+    padding-bottom:6%;
+  }
+  #mainsponsor{
+    width:100%;
+    padding:none;
+   }
+
+  .carousel-inner > .item > img {
+  width:640px;
+  height:250px;
+}
+  .sponsorss-heading{
+    font-size: 2.5rem;
+  }
+}

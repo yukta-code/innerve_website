@@ -1,0 +1,153 @@
+
+body{
+  margin: 0;
+  background: black;
+}
+.grid {
+  text-align: center;
+  width: 100%;   /*orginal was 1349*/
+  height: 100%;    /*original was 699.313px */
+  margin: 0;
+  position: relative;
+  background-image: url(bg.jpg);
+  background-size:contain;
+  /* background-color: #000; */
+}
+
+.grid-item {
+  display: inline-grid;
+  margin: 1%;
+  height: 9.25vw;
+  width: 9.25vw;
+  /* background-color:red; */
+  opacity: 0;
+  transition: opacity 1s ease 0.5s, transform 0.8s ease;
+  transform: scale(1);
+}
+
+.grid-item:hover {
+  opacity: 1;
+  transition: opacity 0.1s ease;
+  transform: scale(1.04);
+}
+
+.heading{
+  position: absolute;
+  top: 50%;
+  left:50%;
+  transform: translate(-50%, -50%);
+  /* z-index:2; */
+  padding: 0;
+  display: inline;
+}
+
+.head{
+  color: #000;
+  font-size: 13vw;
+  font-family: 'Major Mono Display', monospace;
+  font-weight: bolder;
+  padding: 0;
+  margin: 0;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: #fff;
+  max-height: 200px;
+}
+
+.head, .heading{
+  cursor: default;
+}
+
+.red{
+  background-image: url(1.jpg);
+  background-size: contain;
+}
+
+.green{
+  background-image: url(2.jpg);
+  background-size: contain;
+}
+
+.purple{
+  background-image: url(3.jpg);
+  background-size: contain;
+}
+
+.yellow{
+  background-image: url(4.jpg);
+  background-size: contain;
+}
+
+.About{
+  height: auto;
+  width: 100%;
+  background-color: black;
+  text-align: center;
+  margin: 0;
+  position: relative;
+  background-size:contain;
+  display: inline-flex;
+  text-align: center;
+}
+
+.para{
+  text-align: center;
+  margin-right: 10px;
+  font-size: 25px;
+ margin-top: 30px;
+  margin-left: 10px;
+}
+
+svg {
+  display: block;
+  font: 10.5em 'Montserrat';
+  width: 960px;
+  height: 300px;
+  margin: 0 auto;
+}
+
+.text-copy {
+  fill: none;
+  stroke: white;
+  stroke-dasharray: 6% 29%;
+  stroke-width: 5px;
+  stroke-dashoffset: 0%;
+  animation: stroke-offset 5.5s infinite linear;
+}
+
+.text-copy:nth-child(1){
+  stroke: #4D163D;
+  animation-delay: -1;
+}
+
+.text-copy:nth-child(2){
+  stroke: #840037;
+  animation-delay: -2s;
+}
+
+.text-copy:nth-child(3){
+  stroke: #BD0034;
+  animation-delay: -3s;
+}
+
+.text-copy:nth-child(4){
+  stroke: #BD0034;
+  animation-delay: -4s;
+}
+
+.text-copy:nth-child(5){
+  stroke: #FDB731;
+  animation-delay: -5s;
+}
+
+@keyframes stroke-offset{
+  100% {stroke-dashoffset: -35%;}
+}
+
+.heading-about{
+  display: inline-flex;
+  height: 300px;
+  width: 100%;
+  background-color: black;
+
+}
+   
